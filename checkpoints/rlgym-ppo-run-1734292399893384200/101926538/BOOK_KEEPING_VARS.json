@@ -1,0 +1,54 @@
+{
+    "cumulative_timesteps": 101926538,
+    "cumulative_model_updates": 12166,
+    "policy_average_reward": 48.421946105402874,
+    "epoch": 2031,
+    "ts_since_last_save": 100012,
+    "reward_running_stats": {
+        "mean": [
+            1.6277559347264818
+        ],
+        "var": [
+            1295610.2618373206
+        ],
+        "shape": [
+            1
+        ],
+        "count": 305700
+    },
+    "wandb_run_id": "p0rn43a0",
+    "wandb_project": "rlgym-ppo",
+    "wandb_entity": "hatsune-ijole",
+    "wandb_group": "unnamed-runs",
+    "wandb_config": {
+        "n_proc": 40,
+        "min_inference_size": 36,
+        "timestep_limit": 1e+16,
+        "exp_buffer_size": 150000,
+        "ts_per_iteration": 50000,
+        "standardize_returns": true,
+        "standardize_obs": false,
+        "policy_layer_sizes": [
+            2048,
+            2048,
+            1024,
+            1024
+        ],
+        "critic_layer_sizes": [
+            2048,
+            2048,
+            1024,
+            1024
+        ],
+        "ppo_epochs": 2,
+        "ppo_batch_size": 50000,
+        "ppo_minibatch_size": 50000,
+        "ppo_ent_coef": 0.01,
+        "ppo_clip_range": 0.2,
+        "gae_lambda": 0.95,
+        "gae_gamma": 0.99,
+        "policy_lr": 0.0002,
+        "critic_lr": 0.0002,
+        "shm_buffer_size": 8192
+    }
+}
